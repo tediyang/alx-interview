@@ -1,2 +1,2 @@
-# alx-interview
-Solving interview questions provided by ALX in SE Program
+# ALX-INTERVIEW
+Solving interview questions provided by ALX in SE Program.
