@@ -1,0 +1,2 @@
+## LOCKBOXES
+* 0-lockboxes.py - A script that contains a function: canUnlockAll, which checks if the keys in a box can unlock another till there's no box left locked. Return True if there's none and False if there is.
