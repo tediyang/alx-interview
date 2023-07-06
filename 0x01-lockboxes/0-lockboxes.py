@@ -32,6 +32,9 @@ def canUnlockAll(boxes):
                 boxes (list[list]): boxes.
                 index (int): key
         """
+        if boxes is None or len(boxes) == 0:
+            return False
+
         try:
             if not un_boxes[index]:
                 un_boxes[index] = True
