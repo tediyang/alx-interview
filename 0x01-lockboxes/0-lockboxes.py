@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import sys
 """
     You have n number of locked boxes in front of you. Each box is numbered
     sequentially from 0 to n - 1 and each box may contain keys to the other
@@ -24,6 +25,7 @@ def canUnlockAll(boxes):
             @Return: true if all are unlocked or false if
             some are unlocked.
     """
+    sys.setrecursionlimit(1000000)  # SET RECURSION LIMIT NUMBER.
     un_boxes = [False] * len(boxes)
 
     def unlock(boxes, index):
@@ -50,3 +52,15 @@ def canUnlockAll(boxes):
 
     unlock(boxes, 0)
     return all(un_boxes)
+
+
+boxes = []
+
+keys = []
+for n in range(1, 1000):
+    keys = []
+    for m in range(1, 1000):
+        keys.append(m)
+    boxes.append(keys)
+
+print()
