@@ -52,15 +52,3 @@ def canUnlockAll(boxes):
 
     unlock(boxes, 0)
     return all(un_boxes)
-
-
-boxes = []
-
-keys = []
-for n in range(1, 1000):
-    keys = []
-    for m in range(1, 1000):
-        keys.append(m)
-    boxes.append(keys)
-
-print()
