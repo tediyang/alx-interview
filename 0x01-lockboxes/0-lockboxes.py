@@ -35,6 +35,8 @@ def canUnlockAll(boxes):
                 index (int): key
         """
         try:
+            # change the value to true if false (box not open), but if
+            # the value is true (box has already been unlocked), exit.
             if not un_boxes[index]:
                 un_boxes[index] = True
             else:
