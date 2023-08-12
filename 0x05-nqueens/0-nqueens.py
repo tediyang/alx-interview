@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
     Solving nqueens problem in alx interview. Only allowed to import
     the sys module.
