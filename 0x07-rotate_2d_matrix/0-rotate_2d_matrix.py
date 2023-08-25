@@ -2,18 +2,15 @@
 """
     A function that rotates 2D matrix
 """
-from typing import List
-from copy import deepcopy
 
-
-def rotate_2d_matrix(matrix: List[List]) -> List[List]:
+def rotate_2d_matrix(matrix):
     """
     This function rotates a 2D matrix.
 
     Args:
         matrix (List[List]): a n x n matrix
     """
-    temp = deepcopy(matrix)
+    temp = list(map(list, matrix))
     count = 0
     start = len(matrix) - 1
 
