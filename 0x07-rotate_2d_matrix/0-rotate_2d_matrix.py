@@ -3,6 +3,7 @@
     A function that rotates 2D matrix
 """
 
+
 def rotate_2d_matrix(matrix):
     """
     This function rotates a 2D matrix.
