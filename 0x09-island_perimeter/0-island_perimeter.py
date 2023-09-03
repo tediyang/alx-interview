@@ -14,9 +14,9 @@ def island_perimeter(grid):
             if grid[i][j]:
                 u = (not i) or grid[i - 1][j] == 0
                 d = (i + 1 >= row_count) or grid[i + 1][j] == 0
-                l = (not j) or grid[i][j - 1] == 0
+                ln = (not j) or grid[i][j - 1] == 0
                 r = (j + 1 >= col_count) or grid[i][j + 1] == 0
-                p += u + d + l + r
+                p += u + d + ln + r
     return p
 # """
 # a function def island_perimeter(grid): that returns the perimeter of the
@@ -47,7 +47,7 @@ def island_perimeter(grid):
 #             b = row.count(1)
 #             if breadth < 1:
 #                 breadth += b if b != 1 else 0
-                
+
 #     # if length is 1 at least then breadth must be 1
 #     if length and not breadth:
 #         breadth = 1
