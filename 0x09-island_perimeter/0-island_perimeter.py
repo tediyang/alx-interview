@@ -3,10 +3,9 @@
 a function def island_perimeter(grid): that returns the perimeter of the
 island described in grid.
 """
-from typing import List
 
 
-def island_perimeter(grid: List[List]) -> int:
+def island_perimeter(grid) -> int:
     """
     return the perimeter of the island, which is the length
     and breath surrounded by water.
